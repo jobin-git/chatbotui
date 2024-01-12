@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chatbotui';
-  chatOpen = true
+  chatOpen = false
 
   openChat(){
     this.chatOpen = !this.chatOpen

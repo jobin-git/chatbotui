@@ -76,7 +76,7 @@
 
 .user-chat p{
     overflow-wrap:break-word;
-    width: 14rem;
+    font-size: 14px;
 }
 
 .user-profile h3 {
@@ -109,3 +109,152 @@
     font-size: 2rem;
     color: rgb(37, 77, 255);
 }
+
+@keyframes moveInSine1 {
+    0%{
+        transform: translateY(0px);
+    }
+    16%{
+        transform: translateY(3.3px);
+    }
+    33% {
+        transform: translateY(6.6px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    66% {
+        transform: translateY(6.6px);
+    }
+    83% {
+        transform: translateY(3.3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+
+  @keyframes moveInSine2 {
+    0%{
+        transform: translateY(3.3px);
+    }
+    16%{
+        transform: translateY(6.6px);
+    }
+    33% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(6.6px);
+    }
+    66% {
+        transform: translateY(3.3px);
+    }
+    83% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(3.3px);
+    }
+  }
+  
+  @keyframes moveInSine3 {
+    0%{
+        transform: translateY(6.6px);
+    }
+    16%{
+        transform: translateY(10px);
+    }
+    33% {
+        transform: translateY(6.6px);
+    }
+    50% {
+        transform: translateY(3.3px);
+    }
+    66% {
+        transform: translateY(0px);
+    }
+    83% {
+        transform: translateY(3.3px);
+    }
+    100% {
+        transform: translateY(6.6px);
+    }
+  }
+
+  @keyframes moveInSine4 {
+    0%{
+        transform: translateY(10px);
+    }
+    16%{
+        transform: translateY(6.6px);
+    }
+    33% {
+        transform: translateY(3.3px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    66% {
+        transform: translateY(3.3px);
+    }
+    83% {
+        transform: translateY(6.6px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+  }
+  
+  .dot1 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 8px;
+    animation: moveInSine1 1s infinite;
+    animation-timing-function: linear;
+  }
+  
+  .dot2 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 8px;
+    animation: moveInSine2 1s infinite;
+    animation-timing-function: linear;
+  }
+  
+  .dot3 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 8px;
+    animation: moveInSine3 1s infinite;
+    animation-timing-function: linear;
+  }
+
+  .dot4 {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 8px;
+    animation: moveInSine4 1s infinite;
+    animation-timing-function: linear;
+  }
+  
+  .loading-dots {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-right: 5rem;
+  }
+  
