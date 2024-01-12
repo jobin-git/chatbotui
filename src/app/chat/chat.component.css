@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.chat-window{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    right: 6rem;
+    bottom: 6rem;
+    width: 25rem;
+    max-height: 40rem;
+    height: 75vh;
+    background-color: rgb(244, 244, 244);
+    border-radius: 1rem;
+    border: 1px solid rgb(208, 208, 208);
+    box-shadow: 2px 2px 10px 10px rgb(213, 213, 213);
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-profile {
+    display: flex;
+    justify-content:flex-start;
+    height: 4rem;
+    width: 22rem;
+}
+
+.user-chats {
+    position: relative;
+    width: 23rem;
+    height: 100%;
+    font-weight:400;
+    font-size:0.9rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+
+.chat-bubble {
+    display: flex;
+    width: 23rem;
+    margin-top: 1rem;
+
+}
+
+.user-bubble {
+    justify-content: flex-end;
+}
+
+.bot-bubble {
+    justify-content: flex-start;
+}
+
+
+.user-chat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 15rem;
+    height: auto;
+    padding: 0.3rem 1rem;
+}
+
+.user-chat p{
+    overflow-wrap:break-word;
+    width: 14rem;
+}
+
+.user-profile h3 {
+    font-weight: 600;
+}
+
+.user-input {
+    display: flex;
+}
+
+.user-input input {
+    width: 17rem;
+    height: 2.5rem;
+    margin: 1rem 0.5rem;
+    outline: none;
+    border: none;
+    background-color: rgb(215, 215, 215);
+    border-radius: 1rem;
+    padding: 5px 20px;
+}
+
+.user-input button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.user-input button span{
+    font-size: 2rem;
+    color: rgb(37, 77, 255);
+}

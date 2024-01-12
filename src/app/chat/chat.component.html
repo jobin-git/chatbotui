@@ -1,0 +1,22 @@
+<div class="chat-window">
+    <span class="user-profile">
+        <h3>Chat with us</h3>
+    </span>
+    <div #scrollContainer class="user-chats">
+        <div *ngFor="let chat of chats" class="chat-bubble" [ngClass]="chat.user=='bot'?'bot-bubble':'user-bubble'">
+                <div class="user-chat" [ngStyle]="{'background-color':chat.user=='bot'?'#dbebfa':'#DAF7A6'
+                ,'border-radius': chat.user=='bot'?'0rem 1rem 1rem 1rem':'1rem 0rem 1rem 1rem'
+                ,'margin':isScrollbarPresent?' 0rem 1rem':'0rem 0rem'}">
+                    <p>{{chat.message}}</p>
+                </div>
+        </div>
+    </div>
+    <div class="user-input">
+        <input type="text" placeholder="Type a question" [(ngModel)]="userInput">
+        <button (click)="addToChat()">
+            <span class="material-symbols-outlined">
+                send
+                </span>
+        </button>
+    </div>
+</div>
