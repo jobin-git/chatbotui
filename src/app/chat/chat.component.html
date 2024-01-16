@@ -7,7 +7,8 @@
             <div class="user-chat" [ngStyle]="{'background-color':chat.user=='bot'?'#dbebfa':'#DAF7A6'
                 ,'border-radius': chat.user=='bot'?'0rem 1rem 1rem 1rem':'1rem 0rem 1rem 1rem'
                 ,'margin':isScrollbarPresent?' 0rem 1rem':'0rem 0rem'}">
-                <p>{{chat.message}}</p>
+                <p *ngIf="chat.user=='bot';else botReply"><span [ngStyle]="{'color':'red'}">bot:</span> {{chat.message}}</p>
+                <ng-template #botReply><p><span [ngStyle]="{'color':'green'}">you:</span> {{chat.message}}</p></ng-template>
             </div>
         </div>
         <div *ngIf="isLoading" class="loading-dots">
